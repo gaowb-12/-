@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--@include("meta.html")-->
+  <title>人教点读</title>
+  <!--@include("css.html")-->
+  <link rel="stylesheet" href="../css/lib/daterangepicker.css">
+
+  
+  <link rel="stylesheet" href="../css/ssfx_rjdd.css">
+</head>
+<body class="hold-transition skin-black sidebar-mini">
+<div class="wrapper">
+
+  <!--@include("header.html", {"title": "人教点读"})-->
+  <!-- Left side column. contains the logo and sidebar -->
+  <!--@include("sidebar.html", {"sjgl": "active", "cpfx": "active", "ssfx_rjdd": "active"})-->
+  <div class="content-wrapper ssfx_rjdd">
+    <section class="content">
+      <div class="dd-header">
+        <ul>
+          <li>
+            <p class="name">累计用户</p>
+            <p class="title">历史至2019/4/18</p>
+            <p class="val">100,123,980</p>
+          </li>
+          <li>
+            <p class="name">累计注册用户</p>
+            <p class="title">历史至2019/4/18</p>
+            <p class="val">100,123,980</p>
+          </li>
+          <li>
+            <p class="name">累计购买用户</p>
+            <p class="title">历史至2019/4/18</p>
+            <p class="val">100,123,980</p>
+          </li>
+          <li>
+            <p class="name">日均活跃用户</p>
+            <p class="title">过去七日</p>
+            <p class="val">100,123,980</p>
+          </li>
+          <li>
+            <p class="name">日均新增用户</p>
+            <p class="title">过去七日</p>
+            <p class="val">100,123,980</p>
+          </li>
+          <li>
+            <p class="name">日均事件次数</p>
+            <p class="title">过去七日</p>
+            <p class="val">100,123,980</p>
+          </li>
+        </ul>
+      </div>
+      <div class="dd-main1">
+        <!--ymgmzh  用户购买转化 -->
+        <div class="ymgmzh bac">
+          <div class="top">
+              <p class="name">用户购买转化</p>
+              <p class="title">&nbsp;</p>
+          </div>
+          <div id="ymgmzh"></div>
+        </div>
+        <!--rjhy  日均活跃用户占历史累计比 -->
+        <div class="rjhy bac">
+            <div class="top">
+                <p class="name">日均活跃用户占历史累计比</p>
+                <p class="title">过去七日</p>
+            </div>
+          <div id="rjhy"></div>
+        </div>
+        <!--rjxz  日均新增用户占日均活跃比 -->
+        <div class="rjxz bac">
+            <div class="top">
+                <p class="name">日均新增用户占日均活跃比</p>
+                <p class="title">过去七日</p>
+            </div>
+          <div id="rjxz"></div>
+        </div>
+      </div>
+      <div class="dd-main2">
+        <div class="dd-top">
+          <span class="top-title act">日均活跃用户</span>
+          <span class="top-title">日均新增用户</span>
+          <span class="top-title">日均注册用户</span>
+          <span class="top-title">日均购买用户</span>
+          <span class="top-title">日均事件次数</span>
+          <span class="top-title">累计用户</span>
+          <span class="top-title">累计注册用户</span>
+          <span class="top-title">累计购买用户</span>
+        </div>
+        <div class="dd-content">
+          <!-- 用户渠道分布 -->
+          <div class="yhqdfb">
+              <div class="top">
+                  <p class="name">用户渠道分布<span class="sub-desc">(过去七日平均值)</span></span></p>
+              </div>
+              <div id="yhqdfb"></div>
+          </div>
+          <!-- 用户地区分布 -->
+          <div class="yhdqfb">
+              <div class="top">
+                  <p class="name">用户地区分布<span class="sub-desc">(过去七日平均值)</span></p>
+              </div>
+              <div id="yhdqfb"></div>
+          </div>
+        </div>
+      </div>
+      <div class="dd-main3">
+        <!-- 指标变化趋势  zbbhqs-->
+        <div class="zbbhqs">
+          <div class="zbbhqs-input">
+              <input type="text" id="reservation">
+          </div>
+          <div id="zbbhqs"></div>
+        </div>
+      </div>
+      <div class="dd-main4">
+        <!-- 今日实时动态数据  jrssdtsj-->
+        <div class="jrssdtsj">
+            <div id="jrssdtsj"></div>
+          </div>
+      </div>
+    </section>
+  </div>
+
+</div>
+<!-- ./wrapper -->
+
+<!--@include("js.html")-->
+<!-- AdminLTE for demo purposes -->
+<script src="../js/demo.js"></script>
+<script src="../js/lib/echarts-liquidfill.min.js"></script>
+<script src="../js/lib/china.js"></script>
+<script src="../js/lib/moment.min.js"></script>
+<script src="../js/lib/daterangepicker.js"></script>
+<script src="../js/data-ssfx-rjdd.js"></script>
+
+</body>
+</html>

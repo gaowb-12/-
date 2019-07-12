@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <title>人教网</title>
+  <link rel="stylesheet" href="../css/lib/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/lib/AdminLTE.min.css">
+  <link rel="stylesheet" href="../css/lib/iconfont/iconfont.css">
+  <link rel="stylesheet" href="../css/basic.css">
+
+  <link rel="stylesheet" href="../css/lib/daterangepicker.css">
+  <!-- <link rel="stylesheet" href="../css/lib/bootstrap-datepicker.min.css"> -->
+  <!-- <link rel="stylesheet" href="../css/lib/bootstrap-datepicker3.css"> -->
+  
+  <link rel="stylesheet" href="../css/ssfx_rjw.css">
+</head>
+<body class="hold-transition skin-black sidebar-mini">
+<div class="wrapper">
+
+  <header class="main-header">
+    <!-- Logo -->
+    <a href="javascript:;" class="logo ifont pep-logo">
+      <!-- mini logo for sidebar mini 50x50 pixels -->
+      <span class="logo-mini">大数据基础平台</span>
+      <!-- logo for regular state and mobile devices -->
+      <span class="logo-lg">大数据基础平台</span>
+    </a>
+    <!-- Header Navbar: style can be found in header.less -->
+    <nav class="navbar navbar-static-top">
+      <!-- Sidebar toggle button-->
+      <a href="javascript:;" class="sidebar-toggle ifont pep-icon-test" data-toggle="push-menu" role="button">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
+      <div class="navbar-breads">人教点读</div>
+
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+          <!-- Messages: style can be found in dropdown.less-->
+          <li class="fullscreen-menu">
+            <i class="ifont pep-icon-test6"></i>
+          </li>
+          <!-- User Account: style can be found in dropdown.less -->
+          <li class="dropdown user user-menu">
+            <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
+              <span class="hidden-xs">Alexander Pierce</span>
+              <i class="pep-triangle-right"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="user-body">
+                <div class="txt-center">
+                  <a href="javascript:;" class="">退出</a>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- Left side column. contains the logo and sidebar -->
+  <aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+      <!-- Sidebar user panel -->
+
+      <!-- sidebar menu: : style can be found in sidebar.less -->
+      <ul class="sidebar-menu" data-widget="tree">
+        <li class="treeview <!--@sjdp-->">
+          <a href="#">
+            <i class="ifont pep-icon-test1"></i><span>数据大屏</span>
+            <span class="pull-right-container">
+              <i class="ifont pep-icon-test12 pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li class="<!--@zhkb-->"><a href="dashboard.html">综合看板</a></li>
+          </ul>
+        </li>
+        <li class="treeview active">
+          <a href="#">
+            <i class="ifont pep-icon-test2"></i><span>数据概览</span>
+            <span class="pull-right-container">
+              <i class="ifont pep-icon-test12 pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li class="treeview active">
+              <a href="#">产品分析<span class="pull-right-container">
+                <i class="ifont pep-yuanquan pull-right"></i>
+              </span></a>
+              <ul class="treeview-menu">
+                <li class="<!--@ssfx_rjdd-->"><a href="ssfx_rjdd.html">人教点读</a></li>
+                <li class="active"><a href="ssfx_rjw.html">人教网</a></li>
+              </ul>
+            </li>
+            <li class="<!--@jcfx-->"><a href="jcfx.html">教材分析</a></li>
+          </ul>
+        </li>
+
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-share"></i> <span>Multilevel</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="#"><i class="fa fa-circle-o"></i> Level One</a></li>
+            <li class="treeview">
+              <a href="#"><i class="fa fa-circle-o"></i> Level One
+                <span class="pull-right-container">
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
+              </a>
+              <ul class="treeview-menu">
+                <li><a href="#"><i class="fa fa-circle-o"></i> Level Two</a></li>
+                <li class="treeview">
+                  <a href="#"><i class="fa fa-circle-o"></i> Level Two
+                    <span class="pull-right-container">
+                      <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                  </a>
+                  <ul class="treeview-menu">
+                    <li><a href="#"><i class="fa fa-circle-o"></i> Level Three</a></li>
+                    <li><a href="#"><i class="fa fa-circle-o"></i> Level Three</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="#"><i class="fa fa-circle-o"></i> Level One</a></li>
+          </ul>
+        </li>
+        <li class="header">LABELS</li>
+        <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Important</span></a></li>
+
+      </ul>
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+  <div class="content-wrapper ssfx_rjdd">
+    <section class="content">
+      <div class="rjw-header">
+        <ul>
+          <li>
+            <p class="name">日均独立访客</p>
+            <p class="title">历过去2日</p>
+            <p class="val">100,123,980</p>
+          </li>
+          <li>
+            <p class="name">日均浏览次数</p>
+            <p class="title">历过去2日</p>
+            <p class="val">100,123,980</p>
+          </li>
+          <li>
+            <p class="name">日均独立ip数</p>
+            <p class="title">历过去2日</p>
+            <p class="val">100,123,980</p>
+          </li>
+          <li>
+            <p class="name">日均访问次数</p>
+            <p class="title">历过去2日</p>
+            <p class="val">100,123,980</p>
+          </li>
+          <li>
+            <p class="name">人均访问次数</p>
+            <p class="title">历过去2日</p>
+            <p class="val">100,123,980</p>
+          </li>
+          <li>
+            <p class="name">人均浏览次数</p>
+            <p class="title">历过去2日</p>
+            <p class="val">100,123,980</p>
+          </li>
+          <li>
+            <p class="name">平均每次浏览数</p>
+            <p class="title">历过去2日</p>
+            <p class="val">100,123,980</p>
+          </li> 
+        </ul>
+      </div>
+      <div class="rjw-main1">
+        <!--fwcsfb   访问次数分布-->
+        <div class="fwcsfb bac">
+            <div class="top">
+                <p class="name">访问次数分布</p>
+                <p class="title">过去7日</p>
+            </div>
+          <div id="fwcsfb"></div>
+        </div>
+        <!--mcllsfb  每次浏览数分布 -->
+        <div class="mcllsfb bac">
+            <div class="top">
+                <p class="name">每次浏览数分布</p>
+                <p class="title">过去七日</p>
+            </div>
+          <div id="mcllsfb"></div>
+        </div>
+      </div>
+      <div class="rjw-main2">
+        <!-- 用户变化趋势  yhbhqs-->
+        <div class="yhbhqs">
+          <div class="yhbhqs-input">
+              <input type="text" id="reservation">
+          </div>
+          <div class="qiehuan">
+            <span class="act span">实时</span><span class="span">历史</span>
+          </div>
+          <div id="yhbhqs"></div>
+        </div>
+      </div>
+      <div class="rjw-main3">
+        <!--访问情况变化趋势   fwqkbhqs-->
+        <div class="fwqkbhqs">
+            <div class="qiehuan">
+                <span class="act span">实时</span><span class="span">历史</span>
+              </div>
+            <div id="fwqkbhqs"></div>
+          </div>
+      </div>
+      <div class="rjw-main4">
+        <!-- 分辨率top10 -->
+        <div class="fblTop10 bac">
+            <div class="top">
+                <p class="name">分辨率TOP10</p>
+                <p class="title">过去7日</p>
+            </div>
+            <div class="item-label">
+                <span class="item-label-show back-icon-color-52bbb7"></span><span>教材查看用户数</span>
+              </div>
+            <div id="fblTop10"></div>
+        </div>
+        <!-- 浏览器top10 -->
+        <div class="llqTop10 bac">
+            <div class="top">
+                <p class="name">浏览器TOP10</p>
+                <p class="title">过去7日</p>
+            </div>
+            <div class="item-label">
+              <span class="item-label-show back-icon-color-4e3792"></span><span>教材查看用户数</span>
+            </div>
+            <div id="llqTop10"></div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery 3 -->
+<script src="../js/lib/jquery.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="../js/lib/jquery-ui.min.js"></script>
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<script>
+  $.widget.bridge('uibutton', $.ui.button);
+</script>
+<!-- Bootstrap 3.3.7 -->
+<script src="../js/lib/bootstrap.min.js"></script>
+<!-- Morris.js charts -->
+<!-- <script src="bower_components/raphael/raphael.min.js"></script>
+<script src="bower_components/morris.js/morris.min.js"></script> -->
+<!-- Sparkline -->
+<!-- <script src="bower_components/jquery-sparkline/jquery.sparkline.min.js"></script> -->
+<!-- jvectormap -->
+<!-- <script src="plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
+<script src="plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script> -->
+<!-- jQuery Knob Chart -->
+<!-- <script src="bower_components/jquery-knob/jquery.knob.min.js"></script> -->
+<!-- daterangepicker -->
+<!-- <script src="bower_components/moment/min/moment.min.js"></script> -->
+<!-- <script src="bower_components/bootstrap-daterangepicker/daterangepicker.js"></script> -->
+<!-- datepicker -->
+<!-- <script src="bower_components/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script> -->
+<!-- Bootstrap WYSIHTML5 -->
+<!-- <script src="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script> -->
+<!-- Slimscroll -->
+<script src="../js/lib/jquery.slimscroll.min.js"></script>
+<script src="../js/lib/echarts.min.js"></script>
+<!-- FastClick -->
+<!-- <script src="bower_components/fastclick/lib/fastclick.js"></script> -->
+<script src="../js/util.js"></script>
+
+<script src="../js/adminlte.js"></script>
+
+
+
+
+<!-- AdminLTE for demo purposes -->
+<script src="../js/demo.js"></script>
+<script src="../js/lib/echarts-liquidfill.min.js"></script>
+
+<script src="../js/lib/moment.min.js"></script>
+<!-- <script src="../js/lib/bootstrap-datepicker.js"></script> -->
+<!-- https://github.com/dangrossman/daterangepicker -->
+<script src="../js/lib/daterangepicker.js"></script>
+<script src="../js/lib/china.js"></script>
+<script src="../js/data-ssfx-rjw.js"></script>
+</body>
+</html>

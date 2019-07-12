@@ -1,0 +1,183 @@
+@import "./variables.less";
+// dd-header
+.dd-header{
+  padding-right: 15px;
+  background: @white;
+  border-radius: 3px;
+  ul{
+    list-style: none;
+    padding: 5px 0;
+    margin: 0;
+    display: flex;
+    li{
+      flex: 1;
+      padding-left: 15px;
+      padding-right: 10px;
+      border-right: 1px solid @borderF0f0f0;
+      margin: 10px 0;
+      .name{
+        font-size: @fontSize14;
+        color: @blackColor;
+        font-weight: bold;
+        margin-bottom: 6px;
+      }
+      .title{
+        font-size: @fontSize12;
+        color: @middleBlackColor;
+      }
+      .val{
+        font-size: @fontSize24;
+        color: @middleBlue;
+      }
+    }
+    li:last-child{
+      border-right:0;
+    }
+  }
+}
+// dd-main1  
+.dd-main1{
+  margin-top: 15px;
+  display: flex;
+  .bac{
+    height: 330px;
+    background: @white;
+    border-radius: 3px;
+  }
+  .ymgmzh{
+    flex: 1 1 46%;
+    margin-right: 15px;
+    #ymgmzh{
+      width: 100%;
+      height: 270px;
+    }
+  }
+  .rjhy{
+    flex: 1 1 27%;
+    margin-right: 15px;
+    #rjhy{
+      width: 100%;
+      height: 270px;
+    }
+  }
+  .rjxz{
+    flex: 1 1 27%;
+    #rjxz{
+      width: 100%;
+      height: 270px;
+    }
+  }
+}
+// dd-main2
+.dd-main2{
+  margin-top: 15px;
+  height: 500px;
+  background: @white;
+  border-radius: 3px;
+  overflow: hidden;
+  .dd-top{
+    display: flex;
+    padding: 0 15px;
+    .top-title{
+      flex: 1;
+      font-size: @fontSize14 ;
+      text-align: center;
+      line-height: 50px;
+      border-bottom: 2px solid @gray-c9;
+      box-sizing: border-box;
+    }
+    .act{
+      font-weight: bold;
+      color: @black333;
+      border-bottom: 2px solid @light53e6e6;
+    }
+  }
+  .dd-content{
+    display: flex;
+    height: 420px;
+    margin: 10px 0;
+    .yhqdfb{
+      flex: 0 0 45%;
+      border-right: 1px solid @borderF0f0f0;
+      #yhqdfb{
+        width: 100%;
+        height:400px;
+      }
+    }
+    .yhdqfb{
+      flex: 0 0 54.99%;
+      #yhdqfb{
+        width: 100%;
+        height:400px;
+      }
+    }
+  }
+}
+// dd-main3
+.dd-main3{
+  margin-top: 15px;
+  background: @white;
+  border-radius: 3px;
+  .zbbhqs{
+    padding: 10px;
+    position: relative;
+    .zbbhqs-input{
+      position: absolute;
+      top: 10px;
+      right: 30px;
+      width: 160px;
+      // height: 35px;
+      z-index: 999;
+      text-align: center;
+      border: 1px solid #d5d5d5;
+      #reservation{
+        outline: none;
+        border: none;
+        width: 100%;
+        line-height: 20px;
+        height: 20px;
+        font-size: 12px;
+        text-align: center;
+      }
+    }
+    #zbbhqs{
+      width: 100%;
+      height: 470px;
+    }
+  }
+}
+// dd-main4
+.dd-main4{
+  margin-top: 15px;
+  background: @white;
+  border-radius: 3px;
+  .jrssdtsj{
+    padding: 10px;
+    #jrssdtsj{
+      width: 100%;
+      height: 400px;
+    }
+  }
+}
+//公共部分
+.top{
+  padding: 5px 0 0 15px;
+  font-family: @fontFamilyWryh;
+  .name{
+    font-size: 14px;
+    font-weight: bold;
+    margin: 8px;
+    .sub-desc {
+      font-size: 12px;
+      color: @gray-c9;
+      margin-left: 4px;
+      font-weight: 400;
+    }
+  }
+  .title{
+    font-size: 12px;
+    color: @lightBlackColor;
+    font-weight: 100;
+    margin: 0 0 0 8px;
+  }
+}

@@ -1,0 +1,203 @@
+@import "./variables.less";
+// rjw-header
+.rjw-header{
+  padding-right: 15px;
+  background: @white;
+  ul{
+    list-style: none;
+    padding: 5px 0;
+    margin: 0;
+    display: flex;
+    li{
+      flex: 1;
+      padding-left: 15px;
+      padding-right: 10px;
+      border-right: 1px solid @borderF0f0f0;
+      margin: 10px 0;
+      .name{
+        font-size: @fontSize14;
+        color: @blackColor;
+        font-weight: bold;
+        margin-bottom: 6px;
+      }
+      .title{
+        font-size: @fontSize12;
+        color: @middleBlackColor;
+      }
+      .val{
+        font-size: @fontSize30;
+        color: @middleBlue;
+      }
+    }
+    li:last-child{
+      border-right:0;
+    }
+  }
+}
+// rjw-main1  
+.rjw-main1{
+  margin-top: 15px;
+  display: flex;
+  .bac{
+    height: 360px;
+    background: @white;
+    border-radius: 3px;
+  }
+  .fwcsfb{
+    flex:1;
+    margin-right: 15px;
+    #fwcsfb{
+      width: 100%;
+      height:280px;
+    }
+  }
+  .mcllsfb{
+    flex:1;
+    #mcllsfb{
+      width: 100%;
+      height:280px;
+    }
+  }
+}
+// rjw-main2
+.rjw-main2{
+  position: relative;
+  margin-top: 15px;
+  background: @white;
+  border-radius: 3px;
+  .yhbhqs{
+    padding: 10px;
+    position: relative;
+    .qiehuan{
+      right: 280px;
+    }
+    .yhbhqs-input{
+      position: absolute;
+      top: 10px;
+      right: 30px;
+      width: 160px;
+      // height: 35px;
+      z-index: 999;
+      text-align: center;
+      border: 1px solid #d5d5d5;
+      #reservation{
+        cursor: pointer;
+        outline: none;
+        border: none;
+        width: 100%;
+        line-height: 20px;
+        height: 20px;
+        font-size: 12px;
+        text-align: center;
+      }
+    }
+    #yhbhqs{
+      width: 100%;
+      height: 400px;
+    }
+  }
+}
+// rjw-main3
+.rjw-main3{
+  margin-top: 15px;
+  background: @white;
+  border-radius: 3px;
+  .fwqkbhqs{
+    padding: 10px;
+    position: relative;
+    .qiehuan{
+      right: 30px;
+    }
+    #fwqkbhqs{
+      width: 100%;
+      height: 400px;
+    }
+  }
+}
+//rjw-main4
+.rjw-main4{
+  margin-top: 15px;
+  display: flex;
+  .bac{
+    // height: 400px;
+    background: @white;
+    border-radius: 3px;
+  }
+  .fblTop10{
+    margin-right: 15px;
+    flex: 1;
+    #fblTop10{
+      width: 100%;
+      height:300px;
+      margin-top: 70px;
+    }
+  }
+  .llqTop10{
+    flex: 1;
+    #llqTop10{
+      width: 100%;
+      height:300px;
+      margin-top: 70px;
+    }
+  }
+}
+
+//公共部分
+.top{
+  float: left;
+  padding: 5px 0 0 15px;
+  font-family: @fontFamilyWryh;
+  .name{
+    font-size: 14px;
+    font-weight: bold;
+    margin: 8px;
+  }
+  .title{
+    font-size: 12px;
+    color: @lightBlackColor;
+    font-weight: 100;
+    margin: 8px;
+  }
+}
+//实时与历史切换
+.qiehuan{
+  position: absolute;
+  top: 10px;
+  background: @backgroundColor;
+  border-radius: 3px;
+  font-size: @fontSize12;
+  z-index: 999;
+  .span{
+    float: left;
+    width: 50px;
+    border-radius: 3px;
+    line-height: 25px;
+    color: @black333;
+    text-align: center;
+    cursor: pointer;
+  }
+  .act{
+    background: @back00b1ec;
+    color: @white;
+  }
+}
+//
+.item-label{
+  float: right;
+  display: flex;
+  margin: 15px 15px 0 0;
+  align-items: center;
+  font-weight: 400;
+  .item-label-show{
+    margin-right: 10px;
+    width: 24px;
+    height: 14px;
+    border-radius: 3px;
+  }
+  .back-icon-color-52bbb7{
+    background: @52bbb7;
+  }
+  .back-icon-color-4e3792{
+    background: #595ea0;
+  }
+}

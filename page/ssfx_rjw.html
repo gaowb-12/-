@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--@include("meta.html")-->
+  <title>人教网</title>
+  <!--@include("css.html")-->
+  <link rel="stylesheet" href="../css/lib/daterangepicker.css">
+  <!-- <link rel="stylesheet" href="../css/lib/bootstrap-datepicker.min.css"> -->
+  <!-- <link rel="stylesheet" href="../css/lib/bootstrap-datepicker3.css"> -->
+  
+  <link rel="stylesheet" href="../css/ssfx_rjw.css">
+</head>
+<body class="hold-transition skin-black sidebar-mini">
+<div class="wrapper">
+
+  <!--@include("header.html", {"title": "人教点读"})-->
+  <!-- Left side column. contains the logo and sidebar -->
+  <!--@include("sidebar.html", {"sjgl": "active", "cpfx": "active", "ssfx_rjw": "active"})-->
+  <div class="content-wrapper ssfx_rjdd">
+    <section class="content">
+      <div class="rjw-header">
+        <ul>
+          <li>
+            <p class="name">日均独立访客</p>
+            <p class="title">历过去2日</p>
+            <p class="val">100,123,980</p>
+          </li>
+          <li>
+            <p class="name">日均浏览次数</p>
+            <p class="title">历过去2日</p>
+            <p class="val">100,123,980</p>
+          </li>
+          <li>
+            <p class="name">日均独立ip数</p>
+            <p class="title">历过去2日</p>
+            <p class="val">100,123,980</p>
+          </li>
+          <li>
+            <p class="name">日均访问次数</p>
+            <p class="title">历过去2日</p>
+            <p class="val">100,123,980</p>
+          </li>
+          <li>
+            <p class="name">人均访问次数</p>
+            <p class="title">历过去2日</p>
+            <p class="val">100,123,980</p>
+          </li>
+          <li>
+            <p class="name">人均浏览次数</p>
+            <p class="title">历过去2日</p>
+            <p class="val">100,123,980</p>
+          </li>
+          <li>
+            <p class="name">平均每次浏览数</p>
+            <p class="title">历过去2日</p>
+            <p class="val">100,123,980</p>
+          </li> 
+        </ul>
+      </div>
+      <div class="rjw-main1">
+        <!--fwcsfb   访问次数分布-->
+        <div class="fwcsfb bac">
+            <div class="top">
+                <p class="name">访问次数分布</p>
+                <p class="title">过去7日</p>
+            </div>
+          <div id="fwcsfb"></div>
+        </div>
+        <!--mcllsfb  每次浏览数分布 -->
+        <div class="mcllsfb bac">
+            <div class="top">
+                <p class="name">每次浏览数分布</p>
+                <p class="title">过去七日</p>
+            </div>
+          <div id="mcllsfb"></div>
+        </div>
+      </div>
+      <div class="rjw-main2">
+        <!-- 用户变化趋势  yhbhqs-->
+        <div class="yhbhqs">
+          <div class="yhbhqs-input">
+              <input type="text" id="reservation">
+          </div>
+          <div class="qiehuan">
+            <span class="act span">实时</span><span class="span">历史</span>
+          </div>
+          <div id="yhbhqs"></div>
+        </div>
+      </div>
+      <div class="rjw-main3">
+        <!--访问情况变化趋势   fwqkbhqs-->
+        <div class="fwqkbhqs">
+            <div class="qiehuan">
+                <span class="act span">实时</span><span class="span">历史</span>
+              </div>
+            <div id="fwqkbhqs"></div>
+          </div>
+      </div>
+      <div class="rjw-main4">
+        <!-- 分辨率top10 -->
+        <div class="fblTop10 bac">
+            <div class="top">
+                <p class="name">分辨率TOP10</p>
+                <p class="title">过去7日</p>
+            </div>
+            <div class="item-label">
+                <span class="item-label-show back-icon-color-52bbb7"></span><span>教材查看用户数</span>
+              </div>
+            <div id="fblTop10"></div>
+        </div>
+        <!-- 浏览器top10 -->
+        <div class="llqTop10 bac">
+            <div class="top">
+                <p class="name">浏览器TOP10</p>
+                <p class="title">过去7日</p>
+            </div>
+            <div class="item-label">
+              <span class="item-label-show back-icon-color-4e3792"></span><span>教材查看用户数</span>
+            </div>
+            <div id="llqTop10"></div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+</div>
+<!-- ./wrapper -->
+
+<!--@include("js.html")-->
+<!-- AdminLTE for demo purposes -->
+<script src="../js/demo.js"></script>
+<script src="../js/lib/echarts-liquidfill.min.js"></script>
+
+<script src="../js/lib/moment.min.js"></script>
+<!-- <script src="../js/lib/bootstrap-datepicker.js"></script> -->
+<!-- https://github.com/dangrossman/daterangepicker -->
+<script src="../js/lib/daterangepicker.js"></script>
+<script src="../js/lib/china.js"></script>
+<script src="../js/data-ssfx-rjw.js"></script>
+</body>
+</html>

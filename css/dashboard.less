@@ -1,0 +1,196 @@
+@import "./variables.less";
+@dashboarderHeaderHeight: 40px;
+@chartsBoxHeaderHeight: 28px;
+@bkColor: #021229;
+@sideWidth: 530 / 1920;
+@borderColor: #0230bb;
+@centerWidth: (1920 - 530 * 2) / 1920;
+@textColor: #91f9ff;
+@boxBk: #042044;
+.dashboard {
+  position: relative;
+  overflow: hidden;
+  .content-dashboard {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  .dashboard-header {
+    position: absolute;
+    height: @dashboarderHeaderHeight;
+    line-height: @dashboarderHeaderHeight;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    z-index: 11;
+    background: url("../img/dashboard-header.png") @bkColor no-repeat;
+    background-size: 60% 35px;
+    background-position: center top;
+    .i-fullscreen {
+      position: absolute;
+      color: @textColor;
+      top: 0;
+      right: 10px;
+      width: 14px;
+      height: 14px;
+      line-height: 26px;
+      cursor: pointer;
+    }
+  }
+  .dashboard-wrapper {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    background: @bkColor;
+  }
+  .dashboard-left,
+  .dashboard-right {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    flex: @sideWidth @sideWidth;
+    position: relative;
+    z-index: 21;
+  }
+  .dashboard-center {
+    display: flex;
+    flex: @centerWidth @centerWidth;
+    position: relative;
+    flex-direction: column;
+    position: relative;
+    z-index: 21;
+    margin: 46px 0 16px;
+
+    // margin-top: @dashboarderHeaderHeight;
+    .box-center-a {
+      position: relative;
+      flex: 0 0 2 / 3 * 100%;
+      color: @textColor;
+      font-size: 14px;
+      // margin-top: 24px;
+      .box-center-info {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        color: #fff;
+        font-size: 14px;
+      }
+      .user-label {
+        font-weight: 500;
+      }
+      .user-val {
+        font-size: 20px;
+        margin: 6px 0;
+        color: @textColor;
+      }
+    }
+    .box-center-b {
+      position: relative;
+      flex: 0 0 1 / 3 * 100%;
+      color: @textColor;
+      font-size: 14px;
+      margin: 0px 10px;
+      border: 1px solid @borderColor;
+    }
+  }
+  .dashboard-left {
+    margin: 26px 0 16px 10px;
+  }
+  .dashboard-right {
+    margin: 26px 10px 16px 0;
+  }
+  .dashboard-box {
+    .box-aside {
+      position: relative;
+      flex: 1 1 auto;
+      color: @textColor;
+      font-size: 14px;
+      background: @boxBk;
+      border: 1px solid @borderColor;
+      margin-bottom: 10px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    .box-aside,
+    .box-center-b {
+      position: relative;
+      flex: 1 1 auto;
+      color: @textColor;
+      font-size: 14px;
+      background: @boxBk;
+      border: 1px solid @borderColor;
+      margin-bottom: 10px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      .angle {
+        position: absolute;
+        background: url(../img/angle.png);
+      }
+      .left-top-angle {
+        left: -1px;
+        top: -1px;
+        height: 10px;
+        width: 10px;
+      }
+      .right-top-angle {
+        right: -1px;
+        top: -1px;
+        height: 10px;
+        width: 10px;
+        transform: rotate(90deg);
+      }
+      .right-bottom-angle {
+        right: -1px;
+        bottom: -1px;
+        height: 10px;
+        width: 10px;
+        transform: rotate(180deg);
+      }
+      .left-bottom-angle {
+        left: -1px;
+        bottom: -1px;
+        height: 10px;
+        width: 10px;
+        transform: rotate(270deg);
+      }
+      .border {
+        position: absolute;
+        width: 50%;
+        height: 1px;
+        margin-left: -25%;
+        left: 50%;
+        background: url(../img/boarder.png) center center;
+      }
+      .top-border {
+        top: -1px;
+        left: 50%;
+        width: 50%;
+        height: 1px;
+        margin-left: -25%;
+      }
+      .bottom-border {
+        bottom: -1px;
+      } 
+    }
+  }
+  .charts-header {
+    padding: 8px 0 0 8px;
+  }
+  .charts-box {
+    position: absolute;
+    top: 28px;
+    left: 0;
+    width: 100%;
+    // min-height: 100px;
+    // padding-top: 28px;
+  }
+  .map-charts {
+    position: absolute;
+    // top: -30px;
+    // left: -30px;
+    width: 100%;
+  }
+}

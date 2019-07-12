@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--@include("meta.html")-->
+  <title>AdminLTE 2 | Dashboard</title>
+  <!--@include("css.html")-->
+  <link rel="stylesheet" href="../css/jcfx.css">
+</head>
+<body class="hold-transition skin-black sidebar-mini">
+<div class="wrapper">
+
+  <!--@include("header.html", {"title": "教材分析"})-->
+  <!-- Left side column. contains the logo and sidebar -->
+  <!--@include("sidebar.html", {"sjgl": "active", "jcfx": "active"})-->
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper jcfx">
+    <!-- Main content -->
+    <section class="content">
+      <!-- Small boxes (Stat box) -->
+      <div class="row">
+        <div class="col-lg-3 col-xs-6">
+          <div class="box-a selected">
+            <div class="box-title">教材查看用户数</div>
+            <div class="box-val">199,999,333</div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-xs-6">
+          <div class="box-a">
+            <div class="box-title">教材查看次数</div>
+            <div class="box-val">199,999,333</div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-xs-6">
+          <div class="box-a">
+            <div class="box-title">教材资源大小</div>
+            <div class="box-val">199,999,333</div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-xs-6">
+          <div class="box-a">
+            <div class="box-title">教材资源数量</div>
+            <div class="box-val">199,999,333</div>
+          </div>
+        </div>
+      </div>
+      <!-- /.row -->
+      <!-- Main row -->
+      <div class="row subject-analysis-box">
+        <section class="col-lg-12">
+          <div class="subject-analysis-box-content box-content">
+            <div class="charts-header">
+              <div class="pull-left">学科分析</div>
+              <div class="pull-right item-label">
+                <span class="item-label-show"></span><span>教材查看用户数</span>
+              </div>
+            </div>
+            <div id="subject-analysis" class="subject-analysis"></div>
+          </div>
+        </section>
+      </div>
+      <!-- /.row (main row) -->
+      <div class="row two-half-box">
+            <div class="col-lg-6">
+              <div class="box-content">
+                <div class="charts-header chinese-user-distrubution">
+                  <div class="pull-left">语文-教材TOP10</div>
+                  <div class="pull-right item-label">
+                    <span class="item-label-show"></span><span>教材查看用户数</span>
+                  </div>
+                </div>
+                <div id="top10-charts" class="top10-charts"></div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="box-content">
+                <div class="charts-header">
+                  <div class="pull-left">语文-查看用户数分布</div>
+                  <!-- <div class="pull-right item-label">
+                    <span class="item-label-show"></span><span>教材查看用户数</span>
+                  </div> -->
+                </div>
+              <div id="user-distribution-charts" class="user-distribution-charts"></div>
+              </div>
+        </div>
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+  <!-- Add the sidebar's background. This div must be placed
+       immediately after the control sidebar -->
+  <div class="control-sidebar-bg"></div>
+</div>
+<!-- ./wrapper -->
+
+<!--@include("js.html")-->
+<!-- AdminLTE for demo purposes -->
+<script src="../js/demo.js"></script>
+<script src="../js/data-review-jcfx.js"></script>
+</body>
+</html>

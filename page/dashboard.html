@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--@include("meta.html")-->
+  <title>综合看板</title>
+  <!--@include("css.html")-->
+  <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body class="hold-transition skin-black sidebar-mini dashboard">
+<div class="wrapper">
+
+  <!--@include("header.html", {"title": "教材分析"})-->
+  <!-- Left side column. contains the logo and sidebar -->
+  <!--@include("sidebar.html", {"sjgl": "", "jcfx": "", "sjdp": "active", "zhkb": "active"})-->
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper content-dashboard clearfix">
+    <div class="dashboard-wrapper">
+        <div class="dashboard-header">
+          <span>人教大数据综合看板</span><i class="ifont pep-icon-test6 i-fullscreen"></i>
+        </div>
+      <div class="dashboard-box dashboard-left">
+        <div class="box-aside hot-subject-top10">
+          <div class="left-top-angle angle"></div>
+          <div class="right-top-angle angle"></div>
+          <div class="right-bottom-angle angle"></div>
+          <div class="left-bottom-angle angle"></div>
+          <div class="top-border border"></div>
+          <div class="bottom-border border"></div>
+          <div class="charts-header">
+            <div class="">热门学科TOP10</div>
+          </div>
+          <div class="hot-subject-top10-charts charts-box"></div>
+        </div>
+        <div class="box-aside subject-usage">
+          <div class="left-top-angle angle"></div>
+          <div class="right-top-angle angle"></div>
+          <div class="right-bottom-angle angle"></div>
+          <div class="left-bottom-angle angle"></div>
+          <div class="top-border border"></div>
+          <div class="bottom-border border"></div>
+          <div class="charts-header">
+            <div class="">语文年级使用情况</div>
+          </div>
+          <div class="subject-usage-charts charts-box"></div>
+        </div>
+        <div class="box-aside textbook-top5">
+          <div class="left-top-angle angle"></div>
+          <div class="right-top-angle angle"></div>
+          <div class="right-bottom-angle angle"></div>
+          <div class="left-bottom-angle angle"></div>
+          <div class="top-border border"></div>
+          <div class="bottom-border border"></div>
+          <div class="charts-header">
+              <div class="">语文热门教材TOP5</div>
+          </div>
+          <div class="textbook-top5-charts charts-box"></div>
+        </div>
+      </div>
+      <div class="dashboard-box dashboard-center">
+        <div class="box-center-a">
+          <div class="box-center-info">
+            <div class="user-account">
+              <div class="user-label">累计用户</div>
+              <div class="user-val">21,100,912</div>
+            </div>
+            <div class="user-active">
+              今日活跃：<span>2,333</>
+            </div>
+          </div>
+          <div class="map-charts">
+
+          </div>
+        </div>
+        <div class="box-center-b realtime-user">
+          <div class="left-top-angle angle"></div>
+          <div class="right-top-angle angle"></div>
+          <div class="right-bottom-angle angle"></div>
+          <div class="left-bottom-angle angle"></div>
+          <div class="top-border border"></div>
+          <div class="bottom-border border"></div>
+          <div class="charts-header">
+            <div class="">实时用户数据</div>
+          </div>
+          <div class="realtime-user-charts charts-box"></div>
+        </div>
+      </div>
+      <div class="dashboard-box dashboard-right">
+        <div class="box-aside hot-app">
+          <div class="left-top-angle angle"></div>
+          <div class="right-top-angle angle"></div>
+          <div class="right-bottom-angle angle"></div>
+          <div class="left-bottom-angle angle"></div>
+          <div class="top-border border"></div>
+          <div class="bottom-border border"></div>
+          <div class="charts-header">
+            <div class="">热门产品</div>
+          </div>
+          <div class="hot-app-charts charts-box"></div>
+        </div>
+        <div class="box-aside user-trend">
+          <div class="left-top-angle angle"></div>
+          <div class="right-top-angle angle"></div>
+          <div class="right-bottom-angle angle"></div>
+          <div class="left-bottom-angle angle"></div>
+          <div class="top-border border"></div>
+          <div class="bottom-border border"></div>
+          <div class="charts-header">
+            <div class="">智慧教育教学平台-用户趋势</div>
+          </div>
+          <div class="user-trend-charts charts-box"></div>
+        </div>
+        <div class="box-aside">
+          <div class="left-top-angle angle"></div>
+          <div class="right-top-angle angle"></div>
+          <div class="right-bottom-angle angle"></div>
+          <div class="left-bottom-angle angle"></div>
+          <div class="top-border border"></div>
+          <div class="bottom-border border"></div>
+          <div class="charts-header">
+            <div class="">智慧教育教学平台-用户趋势</div>
+          </div>
+          <div class="user-trend-charts charts-box"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.content-wrapper -->
+  <!-- Add the sidebar's background. This div must be placed
+       immediately after the control sidebar -->
+  <div class="control-sidebar-bg"></div>
+</div>
+<!-- ./wrapper -->
+
+<!--@include("js.html")-->
+<!-- AdminLTE for demo purposes -->
+<script src="../js/demo.js"></script>
+<script src="../js/lib/china.js"></script>
+<script src="../js/lib/echarts-wordcloud.min.js"></script>
+<script src="../js/dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+@import "./variables.less";
+
+.login{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("@{CssImgUrl}/login-bj.jpg")no-repeat center;
+  background-size: 100% 100%;
+}
+.logincenter{
+  width: 1200px;
+  margin: 10% auto;
+  overflow: hidden;
+}
+.l_img{
+  float: left;
+  .login_img1{
+    position: absolute;
+    width: 25%;
+    max-width:567px;
+    z-index: 1;
+  }
+  .login_img2{
+    position: absolute;
+    width: 24%;
+    max-width: 553px;
+    z-index: 2;
+  }
+}
+.l_from{
+  float: right;
+  margin-right: 30px;
+  width: 440px;
+  >p{
+    text-align: center;
+    color: @white;
+    line-height: 70px;
+    font-size: 34px;
+    i{
+      font-size: @fontSize38;
+      padding: 8px;
+    }
+  }
+  .yhdl{
+    border-radius: 10px;
+    background: @white;
+    padding: 20px 0;
+    .title{
+      text-align: center;
+      font-family: "微软雅黑";
+      font-size: @fontSize30;
+      color: #114a8d;
+    }
+  }
+}
+.form{      
+  .form-group-0{
+    margin: 0;
+    padding: 0 62px;
+  }
+  .form-group-bj{
+    background: #f2f6f9;
+  }
+}
+.form-group{
+  clear: both;
+  background: @white;
+  padding: 18px 62px;
+  margin: 0;
+  .err-inf{
+    color: red;
+    font-size: @fontSize12;
+  }
+  .fg-itm{
+    width: 315px;
+    height: 37px;
+    box-sizing: border-box;
+    i{
+      display: block;
+      float: left;
+      font-size: 14px;
+      color: #d4dee7;
+      width: 20px;
+      margin: 7px 0 0 5px;
+      box-sizing: border-box;
+    }
+    input{
+      float: left;
+      border: none;
+      padding: 0;
+      line-height: 35px;
+      text-indent: 2px;
+    }
+    button{
+      border: none;
+      width: 315px;
+      height: 35px;
+      background: @loginButton;
+      color: @white;
+      font-size: @fontSize14;
+      &:hover{
+        list-style: none;
+      }
+    }
+    .checkbox{
+      color: #7db6d5;
+    }
+  }
+  .fg-border{
+    border: 1px solid #e9eaec;
+    background: @white;
+      input{
+        width: 280px;
+        height: 35px;
+      }
+  }
+}
